@@ -135,7 +135,7 @@ function mouseClicked() {
 				
 			for(let i = 0; i < tittle.length; i ++){
 			
-				let distance = abs(totalOffset - (mouseX-width/3)-171);
+				let distance = abs(totalOffset - (mouseX-width/3)-170);
 				distance = constrain(distance, 24, 50);
 				
 				textSize(100 - distance);
