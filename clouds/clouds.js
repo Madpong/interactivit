@@ -104,9 +104,9 @@ class cloud{
 			this.vel.limit(this.maxspeed);
 			//this.pos.x += this.vel.x;
 			this.pos.add(this.vel);
-			if(this.pos.x <= 0){ 
+			if(this.pos.x <= -90*3){ 
 				this.vel.mult(0);
-				this.pos.x = width;
+				this.pos.x = width+90*3;
 				this.pos.y = random(0,height);
 				this.vel.add(this.acc);
 			 }
@@ -125,3 +125,4 @@ class cloud{
 
 }
 		
+
